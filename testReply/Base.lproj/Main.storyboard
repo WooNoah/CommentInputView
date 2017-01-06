@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PTz-Dj-dmd">
+                                <rect key="frame" x="160.5" y="170" width="53" height="30"/>
+                                <state key="normal" title="present"/>
+                                <connections>
+                                    <action selector="presentInputView:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UfF-QH-MyV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G9g-KP-MIF">
+                                <rect key="frame" x="279.5" y="170" width="52" height="30"/>
+                                <state key="normal" title="dismiss"/>
+                                <connections>
+                                    <action selector="dismissInputView:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Yy3-Vp-gjK"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gSe-Y7-qxo">
+                                <rect key="frame" x="126" y="233" width="122" height="30"/>
+                                <state key="normal" title="changeNickName"/>
+                                <connections>
+                                    <action selector="changeNickName:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pdZ-CS-ITD"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="gSe-Y7-qxo" firstAttribute="centerX" secondItem="PTz-Dj-dmd" secondAttribute="centerX" id="D43-SO-mwf"/>
+                            <constraint firstItem="gSe-Y7-qxo" firstAttribute="top" secondItem="PTz-Dj-dmd" secondAttribute="bottom" constant="33" id="Gf1-DP-isQ"/>
+                            <constraint firstItem="PTz-Dj-dmd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="WFu-C2-2DY"/>
+                            <constraint firstItem="G9g-KP-MIF" firstAttribute="leading" secondItem="PTz-Dj-dmd" secondAttribute="trailing" constant="66" id="Wk1-VF-QZ7"/>
+                            <constraint firstItem="G9g-KP-MIF" firstAttribute="centerY" secondItem="PTz-Dj-dmd" secondAttribute="centerY" id="XAH-Oz-Uei"/>
+                            <constraint firstItem="PTz-Dj-dmd" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="150" id="aUA-XD-8XC"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="testBtn" destination="PTz-Dj-dmd" id="g5y-id-85y"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
